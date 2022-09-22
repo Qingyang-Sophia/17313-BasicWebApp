@@ -22,13 +22,13 @@ public class QueryProcessorTest {
 
     @Test
     public void knowsAboutPineapple() throws Exception {
-        assertThat(queryProcessor.process("Pineapple"), containsString("playwright"));
+        assertThat(queryProcessor.process("Pineapple"), containsString("tropical"));
     }
 
     @Test
     public void isNotCaseSensitive() throws Exception {
         assertThat(queryProcessor.process("shakespeare"), containsString("playwright"));
-        assertThat(queryProcessor.process("pineapple"), containsString("playwright"));
+        assertThat(queryProcessor.process("pineapple"), containsString("tropical"));
     }
 
 }
